@@ -1,0 +1,29 @@
+{
+  "name": "winston-transport-amqp-pool",
+  "version": "1.0.0",
+  "description": "winston-transport with amqp-pool publish logic",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build ts.config.json",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix"
+  },
+ "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
+  "repository": "https://github.com/VoicenterTeam/winston-transport-amqp-pool",
+  "author": "Shlomi Gutman",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "prettier": "^2.7.0",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "husky": "^8.0.1"
+  }
+}
